@@ -1,228 +1,556 @@
-<!doctype html>
-<html lang="zh" class="no-js dark">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>赵万军的个人主页</title>
-  <meta name="keywords" content="赵万军的个人主页,欢迎来到赵万军的个人主页">
-  <meta name="description" content="赵万军的个人主页,www.cjzwj.top,">
-  <link rel="shortcut icon" href="https://cjzwj.gitee.io/zidctg/zwjys.ico">
-  <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
-  <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
-<link rel="stylesheet" href="css/player.css">
-<div id="QPlayer">
-<div id="pContent">
-	<div id="player">
-		<span class="cover"></span>
-		<div class="ctrl">
-			<div class="musicTag marquee">
-				<strong>Title</strong>
-				 <span> - </span>
-				<span class="artist">Artist</span>
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+		<title>赵万军 | 战胜自己！</title>
+                                <link rel="shortcut icon" href="http://cjzwj.gitee.io/picture/images/icon_new.png">
+		<meta name="description" content="这个赵万军的个人网站，虽然懂得不多，但是这是我最喜欢的爱好吧。喜欢热血动漫、龙珠、火影忍者、特别喜欢龙珠和系列主机游戏，业余喜欢剪剪视频虽然菜，但是就是玩！哎！就是玩！这里是赵万军的个人主页">
+		<meta name="keywords" content="赵万军,Wz-小赵个人博客,个人网站,博客,小赵">
+		<link rel="stylesheet" href="css/animate.compat.css" />
+		<link rel="stylesheet" href="css/player.css">
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--轮播css-->
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<script src="js/swiper.min.js"></script>
+	</head>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		HTML,
+		body,
+		div,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		ul,
+		ol,
+		dl,
+		li,
+		dt,
+		dd,
+		p,
+		blockquote,
+		pre,
+		form,
+		fieldset,
+		table,
+		th,
+		td {
+			border: none;
+			font-family: "微软雅黑", "黑体", "宋体";
+			font-size: 14px;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		html,
+		body {
+			height: 100%;
+			width: 100%;
+		}
+
+		address,
+		caption,
+		cite,
+		code,
+		dfn,
+		em,
+		strong,
+		th,
+		var {
+			font-style: normal;
+			font-weight: normal;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		a:link {
+			color: #fff;
+		}
+
+		a:visited {
+			color: #fff;
+		}
+
+		a:hover {
+			color: #fff;
+		}
+
+		a:active {
+			color: #fff;
+		}
+
+		input::-ms-clear {
+			display: none;
+		}
+
+		input::-ms-reveal {
+			display: none;
+		}
+
+		input {
+			-webkit-appearance: none;
+			margin: 0;
+			outline: none;
+			padding: 0;
+		}
+
+		input::-webkit-input-placeholder {
+			color: #ccc;
+		}
+
+		input::-ms-input-placeholder {
+			color: #ccc;
+		}
+
+		input::-moz-placeholder {
+			color: #ccc;
+		}
+
+		input[type=submit],
+		input[type=button] {
+			cursor: pointer;
+		}
+
+		button[disabled],
+		input[disabled] {
+			cursor: default;
+		}
+
+		img {
+			border: none;
+		}
+
+		ul,
+		ol,
+		li {
+			list-style-type: none;
+		}
+
+		/*公共方法*/
+		.clear {
+			clear: both;
+		}
+
+		.clearleft {
+			clear: left;
+		}
+
+		.clearright {
+			clear: right;
+		}
+
+		.floatleft {
+			float: left;
+		}
+
+		.floatright {
+			float: right;
+		}
+
+		.cursor {
+			cursor: pointer;
+		}
+
+		/*背景及色值表*/
+		.bg000 {
+			background: #000;
+		}
+
+		.color000 {
+			color: #000;
+		}
+
+		body {
+			background-image: linear-gradient(to left, rgba(255, 0, 149, 0.2), rgba(0, 247, 255, 0.2)), url(#);
+			/*background: #81a779;*/
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+
+		#box {
+			width: 100%;
+			min-height: calc(100% - 160px);
+			margin: 0 auto;
+			padding-top: 90px;
+		}
+
+		#footer {
+			width: 100%;
+			height: 50px;
+			color: #000;
+			text-align: center;
+			font-size: 16px;
+		}
+
+		#footer a {
+			color: #000000;
+		}
+
+		#boox {
+			width: 450px;
+			margin: 0 auto;
+			margin-bottom: 20px;
+			text-align: center;
+			border-radius: 2%;
+			background: white;
+		}
+
+		.touxiang {
+			width: 150px;
+			height: 150px;
+			margin-top: -50px;
+			border-radius: 100%;
+		}
+
+		.title {
+			width: 75%;
+			height: 55px;
+			font-size: 25px;
+			line-height: 55px;
+			margin: 0 auto;
+			font-weight: bold;
+			margin-top: 5px;
+			border-bottom: 3px solid #3192d2;
+		}
+
+		.lizhi {
+			font-size: 15px;
+			margin-top: 5px;
+		}
+
+		.titma {
+			font-size: 16px;
+			padding: 10px 0px;
+		}
+
+		/*看板娘*/
+		#kbn {
+			position: fixed;
+			bottom: 0px;
+			width: 290px;
+			right: 0px;
+			z-index: 999;
+		}
+
+		@media screen and (max-width: 700px) {
+			#box {}
+
+			#boox {
+				width: 75%;
+			}
+
+			.touxiang {
+				width: 100px;
+				height: 100px;
+			}
+
+			.title {
+				height: 40px;
+				line-height: 40px;
+				margin-top: 0px;
+				font-size: 18px;
+			}
+
+			.lizhi {
+				font-size: 14px;
+			}
+
+			#kbn {
+				width: 90px;
+				right: -20px;
+			}
+		}
+
+
+		@media screen and (max-width: 320px) {
+			.titma {
+				font-size: 15px;
+			}
+		}
+
+		#player .cover {
+			height: 50px !important;
+			width: 50px !important;
+			margin-top: 5px;
+			margin-left: 5px;
+		}
+	</style>
+	
+	<!--轮播css-->
+	<style type="text/css">
+		@charset "utf-8";
+	
+		#certify {
+			position: relative;
+			width: 100%;
+			margin: 0 auto;
+			margin-top: 40px;
+		}
+	
+		#certify .swiper-container {
+			padding-bottom: 50px;
+			width: 85%;
+		}
+	
+		#certify .swiper-slide {
+			width: 90%;
+			height: auto;
+			background: #fff;
+			border-radius: 2%;
+			overflow: hidden;
+			box-shadow: 0 8px 30px #ddd;
+		}
+	
+		#certify .swiper-slide img {
+			display: block;
+			width: 100%;
+		}
+	
+		#certify .swiper-slide p {
+			line-height: 0px;
+			padding-top: ;
+			text-align: center;
+			color: #636363;
+			font-size: 1.1em;
+			margin: 0;
+		}
+	
+		#certify .swiper-pagination {
+			width: 100%;
+			bottom: 20px;
+		}
+	
+		#certify .swiper-pagination-bullets .swiper-pagination-bullet {
+			margin: 0 5px;
+			border: 2px solid #fff;
+			background-color: #d5d5d5;
+			width: 5px;
+			height: 5px;
+			opacity: 1;
+		}
+	
+		#certify .swiper-pagination-bullets .swiper-pagination-bullet-active {
+			border: 3px solid #00aadc;
+			background-color: #fff;
+		}
+	
+		#certify .swiper-button-prev {
+			left: -30px;
+			width: 45px;
+			height: 45px;
+			background: url(image/wm_button_icon.png) no-repeat;
+			background-position: 0 0;
+			background-size: 100%;
+		}
+	
+		#certify .swiper-button-prev:hover {
+			background-position: 0 -46px;
+			background-size: 100%;
+		}
+	
+		#certify .swiper-button-next {
+			right: -30px;
+			width: 45px;
+			height: 45px;
+			background: url(image/wm_button_icon.png) no-repeat;
+			background-position: 0 -93px;
+			background-size: 100%;
+		}
+	
+		#certify .swiper-button-next:hover {
+			background-position: 0 -139px;
+			background-size: 100%;
+		}
+	
+		#QPlayer {
+			z-index: 999999;
+		}
+	
+		@media screen and (min-width: 700px) {
+			#certify {
+				width: 900px;
+			}
+	
+			#certify .swiper-slide {
+				width: 80%;
+			}
+		}
+	</style>
+	<body>
+		<div id="box">
+   
+  <!--头像部分div-->
+			<div id="boox" class="animated swing">
+				<img class="touxiang" src="http://cjzwj.gitee.io/picture/me.jpg">
+				<p class="title animated bounceInLeft">Zhao  Wan  Jun</p>
+				<p class="lizhi"><span style="font-size:7px">喜欢动漫、龙珠、火影忍者、和系列主机游戏<br>业余喜欢剪剪视频虽然菜！哎！就是玩！</span></p>
+                                                                <p class="titma animated"><span id="span"><span style="font-size:4px">
+			               <!--运行时间统计开始html-->
+                                                                <span id="sitetime"></span>
+                                                                <script language=javascript>
+                                                                function siteTime(){
+                                                                window.setTimeout("siteTime()", 1000);
+                                                                var seconds = 1000;
+                                                                var minutes = seconds * 60;
+                                                                var hours = minutes * 60;
+                                                                var days = hours * 24;
+                                                                var years = days * 365;
+                                                                var today = new Date();
+                                                                var todayYear = today.getFullYear();
+                                                                var todayMonth = today.getMonth()+1;
+                                                                var todayDate = today.getDate();
+                                                                var todayHour = today.getHours();
+                                                                var todayMinute = today.getMinutes();
+                                                                var todaySecond = today.getSeconds();
+                                                                /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+                                                                year - 作为date对象的年份，为4位年份值
+                                                                month - 0-11之间的整数，做为date对象的月份
+                                                                day - 1-31之间的整数，做为date对象的天数
+                                                                hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+                                                                minutes - 0-59之间的整数，做为date对象的分钟数
+                                                                seconds - 0-59之间的整数，做为date对象的秒数
+                                                                microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+                                                                var t1 = Date.UTC(2020,2,17,00,00,00); //北京时间2016-12-1 00:00:00
+                                                                var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+                                                                var diff = t2-t1;
+                                                                var diffYears = Math.floor(diff/years);
+                                                                var diffDays = Math.floor((diff/days)-diffYears*365);
+                                                                var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+                                                                var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+                                                                var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+                                                                document.getElementById("sitetime").innerHTML=" 已运行"+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+                                                                }
+                                                                siteTime();
+                                                                </script></span>
+			               <!--运行时间统计结束html-->
+                                                                </span></p>
+
+
+
 			</div>
-			<div class="progress">
-				<div class="timer left">0:00</div>
-				<div class="contr">
-					<div class="rewind icon"></div>
-					<div class="playback icon"></div>
-					<div class="fastforward icon"></div>
+	
+			<!--轮播html-->
+			<div id="certify">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><a href="https://space.bilibili.com/66831098?spm_id_from=333.1007.0.0"><img src="http://cjzwj.gitee.io/picture/pg01.png" />
+                                                                                                                                  <p></p>
+							</a></div>
+						<div class="swiper-slide"><a href="https://github.com/ZIDC/com.cjzwjdm"><img src="http://cjzwj.gitee.io/picture/pg02.png" />
+								<p></p>
+							</a></div>
+						<div class="swiper-slide"><a href="http://bzwj.cjzwj.top"><img src="http://cjzwj.gitee.io/picture/pg03.png" />
+								<p></p>
+							</a></div>
+					</div>
 				</div>
-				<div class="right">
-					<div class="liebiao icon"></div>
-				</div>
+				<div class="swiper-pagination"></div>
 			</div>
+			<script>
+				var certifySwiper = new Swiper('#certify .swiper-container', {
+					watchSlidesProgress: true,
+					slidesPerView: 'auto',
+					centeredSlides: true,
+					loop: true,
+					autoplay: true,
+					loopedSlides: 5,
+					autoplay: true,
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+					pagination: {
+						el: '.swiper-pagination',
+						//clickable :true,
+					},
+					on: {
+						progress: function(progress) {
+							for (i = 0; i < this.slides.length; i++) {
+								var slide = this.slides.eq(i);
+								var slideProgress = this.slides[i].progress;
+								modify = 1;
+								if (Math.abs(slideProgress) > 1) {
+									modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
+								}
+								translate = slideProgress * modify * 260 + 'px';
+								scale = 1 - Math.abs(slideProgress) / 5;
+								zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
+								slide.transform('translateX(' + translate + ') scale(' + scale + ')');
+								slide.css('zIndex', zIndex);
+								slide.css('opacity', 1);
+								if (Math.abs(slideProgress) > 3) {
+									slide.css('opacity', 0);
+								}
+							}
+						},
+						setTransition: function(transition) {
+							for (var i = 0; i < this.slides.length; i++) {
+								var slide = this.slides.eq(i)
+								slide.transition(transition);
+							}
+
+						}
+					}
+
+				})
+			</script>
+			<!--轮播html结束-->
 		</div>
-	</div>
-	<div class="ssBtn">
-	        <div class="adf"></div>
-    </div>
-</div>
-<ol id="playlist"></ol>
-</div>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.marquee.min.js"></script>
+		<!-- 页脚 -->
+		<div id="footer">
+			<p>© <script>document.write( new Date().getFullYear() );</script> 赵万军 | <a href="http://beian.miit.gov.cn">苏ICP备20014892号-1</a></p>
+			<p></p>
+			<br><br><br>
+		</div>
+		
+		<!--看板娘-->
+		<img id="kbn" class="animated bounceInRight" src="image/kbn.png">
 
-<script>
-	var	playlist = [
-{title:"江南",artist:"林俊杰",mp3:"http://music.163.com/song/media/outer/url?id=108914.mp3",cover:"http://p3.music.126.net/tBTNafgjNnTL1KlZMt7lVA==/18885211718935735.jpg?param=106x106",},
+		<!--花瓣飘落-->
+		<div style="height:100%; width:100%;display: none;">花瓣飘落</div>
+		<script src="js/snowfall.jquery.js"></script>
+		<script>
+			$(document).snowfall('clear');
+			$(document).snowfall({
+				image: "https://pic.kuaizhan.com/g3/c3/9b/3f72-60cf-4d91-8500-4f193c67c59205",
+				flakeCount: 10,
+				minSize: 5,
+				maxSize: 22
+			});
+		</script>
+	</body>
+	<script src="js/jquery.marquee.min.js"></script>
 
-{title:"好想拥有无敌超能力",artist:"邹念慈",mp3:"http://music.163.com/song/media/outer/url?id=1387851279.mp3",cover:"http://p1.music.126.net/TdOtYQ6Las3gLFI6QO0XcA==/109951164510600450.jpg?param=106x106",},
-
-];
-  var isRotate = true;
-  var autoplay = false;
-</script>
-<script src="js/player.js"></script>
-<script>
-
-function bgChange(){
-	var lis= $('.lib');
-	for(var i=0; i<lis.length; i+=2)
-	lis[i].style.background = 'rgba(246, 246, 246, 0.5)';
-}
-window.onload = bgChange;
-</script>
-
-</head>
-<style type="text/css">
-a:link,a:visited{
- text-decoration:none;  /*超链接无下划线*/
-}
-a:hover{
- text-decoration:underline;  /*鼠标放上去有下划线*/
-}
-</style>
-<body>
-  <div class="vi">
-    <h1 class="animate-slide-in-down">赵万军的个人主页</h1>
-    <div class="quote">
-      <span class="quote-line quote-line-start animate-slide-in-left"></span>
-      <span class="quote-icon quote-icon-start animate-slide-in-down">
-        <i class="icon icon-quotes-left"></i>
-      </span>
-      <p class="quote-content animate-slide-in-down">不积跬步，无以至千里。不积小流，无以成江海。</p>
-      <p class="quote-author animate-slide-in-down">《劝学篇》—— <em>荀子</em></p>
-      <span class="quote-icon quote-icon-end animate-slide-in-up">
-        <i class="icon icon-quotes-right"></i>
-      </span>
-      <span class="quote-line quote-line-end animate-slide-in-right"></span>
-    </div>
-    <div class="links">
-      <a href="tencent://message/?uin=2912105449&Site=Sambow&Menu=yes" class="animate-slide-in-down">Chief QQ</a>
-      <a href="https://mp.weixin.qq.com/s/zo9CMlJzwa3hm7O9FNwNaw" class="animate-slide-in-down">WeiXin</a>
-      <a  class="animate-slide-in-down" onclick="alert('欢迎来到:赵万军的个人主页\n\n站长邮箱:cjzwj@foxmail.com')">Chief Mailbox</a>
-      <a href="https://space.bilibili.com/66831098" class="animate-slide-in-down">B Station</a>
-    </div>
-    <div class="location">
-      <span class="location-icon animate-slide-in-up">
-        <i class="icon icon-map-pin"></i>
-      </span>
-      <span class="location-text animate-slide-in-down">Nan Jing - China</span>
-    </div>
-    <div class="relocating">
-      Navigating to: <span class="relocate-location"></span>...
-    </div>
-
-
-<div class="location">
-      <span class="location-icon animate-slide-in-up">
-        <i class=""></i>
-      </span>
-      <span class="location-text animate-slide-in-down"><span style="font-size:10px">Copyright &copy;&nbsp;2021&nbsp; www.cjzwj.top &nbsp;All rights reserved.<br>
-                                                               <center><a href="http://beian.miit.gov.cn">苏ICP备20014892号-1</a><br>
-                                                              <script type="text/javascript" src="https://v1.cnzz.com/z_stat.php?id=1278601974&web_id=1278601974"></script>
-                                                              </center></span></span>
-    </div>
-    <div class="relocating">
-      Navigating to: <span class="relocate-location"></span>...
-    </div>
-
-
-
-
-
-
-    <div class="location">
-      <span class="location-icon animate-slide-in-up">
-        <i class=""></i>
-      </span>
-      <span class="location-text animate-slide-in-down"><center>    
-<a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img class="header-logo-image" src="#" style="width: 59px;height:32px"/>
-</center></span>
-    </div>
-
-
-
-
-  </div>
-
-
-
-  <script src="assets/vendors/jquery-3.3.1.min.js"></script>
-  <script>
-    $(function () {
-      var SLIDE_IN_DOWN = { opacity: 1, top: 0 };
-      var SLIDE_IN_UP = { opacity: 1, bottom: 0 };
-      var SLIDE_IN_LEFT = { left: 0 };
-      var SLIDE_IN_RIGHT = { right: 0 };
-
-      registerCheatCode();
-      executeAnimations();
-
-      function executeAnimations() {
-        $.when()
-          .then(animateTitle)
-          .then(animateQuote)
-          .then(animateLinks)
-          .then(animateLocation);
-      }
-
-      function animateTitle() {
-        return animate('h1', SLIDE_IN_DOWN);
-      }
-
-      function animateQuote() {
-        return $.when(
-          animate('.quote-line-start', SLIDE_IN_LEFT),
-          animate('.quote-line-end',SLIDE_IN_RIGHT),
-          animate('.quote-icon-start', SLIDE_IN_DOWN),
-          animate('.quote-icon-end', SLIDE_IN_UP)
-        )
-          .then(function () {
-            return animate('.quote-content', SLIDE_IN_DOWN);
-          })
-          .then(function () {
-            return animate('.quote-author', SLIDE_IN_DOWN);
-          });
-      }
-
-      function animateLinks() {
-        var DELAY_STEP = 200;
-        var elements = $('.links a');
-        var concurrent = $.makeArray(elements)
-          .map(function (element, index) {
-            return animate(element, SLIDE_IN_DOWN, index * DELAY_STEP);
-          });
-
-        return $.when.apply($, concurrent);
-      }
-
-      function animateLocation() {
-        return $.when(
-          animate('.location-icon', SLIDE_IN_UP),
-          animate('.location-text', SLIDE_IN_DOWN)
-        );
-      }
-
-      function animate(selector, properties, delay, options) {
-        delay = delay || 0;
-        return $(selector).delay(delay)
-          .animate(properties, options)
-          .promise();
-      }
-
-      function registerCheatCode() {
-        $(document.body).on('keydown', function (event) {
-          var KEY_B = 66;
-
-          if (event.which === KEY_B) {
-            $('.relocate-location').text('Bookmark Page');
-            $('.relocating').css('opacity', 1);
-
-            window.setTimeout(function () {
-              window.location.href = '/bookmarks.html';
-            }, 1000);
-          }
-        });
-      }
-    });
-  </script>
-</body>
-<meta name="google-site-verification" content="PikijwgGpzzzK3_TbJRjGPBdUnZpcGvESA5aBTu9TS8" />
+<!--自适应-->
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <script type="text/javascript">
